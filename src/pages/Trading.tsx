@@ -210,6 +210,162 @@ const Trading = () => {
         </div>
       </section>
 
+      {/* Three-Level Management System */}
+      <section className="py-20 bg-gradient-to-br from-muted/30 to-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-bold mb-16 text-gradient-primary text-center">
+              Трёхуровневая система управления
+            </h2>
+            
+            <div className="grid lg:grid-cols-3 gap-8">
+              <Card className="card-elevated">
+                <CardHeader>
+                  <Users className="h-8 w-8 text-primary mb-2" />
+                  <CardTitle>Штатные трейдеры</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Это ядро нашей команды. Это профессионалы с многолетним опытом, которые прошли отбор 
+                    и доказали свою эффективность на реальных рынках. Они работают по стратегиям, которые мы используем 
+                    уже много лет, и которые показали стабильные результаты в разных рыночных условиях. 
+                    Их задача — обеспечивать надёжный, предсказуемый результат и быть примером дисциплины 
+                    и качества для всей команды.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="card-elevated">
+                <CardHeader>
+                  <Bot className="h-8 w-8 text-primary mb-2" />
+                  <CardTitle>Алгоритмическая торговля</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    Crypto и Forex алгоритмы — автоматизированные системы для работы на финансовых рынках, 
+                    обеспечивающие круглосуточную торговлю без эмоций и усталости.
+                  </p>
+                  
+                  <h4 className="font-semibold text-primary mb-2">Почему мы используем алгоритмическую торговлю:</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1 mb-4">
+                    <li>• Скорость и точность — алгоритм реагирует на рыночные изменения мгновенно</li>
+                    <li>• Дисциплина — программа строго следует заданной стратегии</li>
+                    <li>• Круглосуточная работа — алгоритмы могут торговать 24/7</li>
+                  </ul>
+
+                  <h4 className="font-semibold text-primary mb-2">Диверсификация внутри алгоритмической торговли:</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Forex-алго — валютные пары и золото</li>
+                    <li>• Crypto-алго — крупные криптовалюты, в первую очередь Ethereum и Bitcoin</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="card-elevated">
+                <CardHeader>
+                  <TrendingUp className="h-8 w-8 text-primary mb-2" />
+                  <CardTitle>Prop IKS Capital</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Это направление, через которое мы привлекаем перспективных трейдеров из Академии IKS Capital. 
+                    Здесь они проходят обучение тем же стратегиям и методам, которые успешно применяются в фонде 
+                    и доказали свою эффективность на практике. Такой подход позволяет нам находить и развивать 
+                    действительно талантливых людей, у которых пока нет собственного капитала, но есть необходимые 
+                    качества для успешной торговли: аналитический склад ума, дисциплина, умение работать с рисками 
+                    и стремление к результату.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Благодаря этой системе мы не только формируем команду лояльных и подготовленных специалистов, 
+                    но и создаём основу для масштабирования компании. Когда объём капитала под управлением растёт, 
+                    мы можем быстро увеличить количество активных трейдеров, не жертвуя качеством и безопасностью 
+                    управления средствами.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Diversification and Protection */}
+      <section className="py-20 bg-gradient-to-br from-background to-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-bold mb-16 text-gradient-primary text-center">
+              Диверсификация и многоуровневая защита
+            </h2>
+            
+            <div className="grid lg:grid-cols-2 gap-12 mb-12">
+              <Card className="card-elevated">
+                <CardHeader>
+                  <Shield className="h-8 w-8 text-primary mb-2" />
+                  <CardTitle>Диверсификация и защита капитала</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="text-muted-foreground space-y-3">
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Разные рынки — валюты, золото, криптовалюты
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Разные стратегии — от краткосрочных сделок до среднесрочных трендовых систем
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Разные инструменты управления рисками — стоп-лоссы, лимиты по просадке, автоматическая приостановка торговли
+                    </li>
+                  </ul>
+                  <p className="text-muted-foreground mt-4">
+                    Такое распределение снижает зависимость от одного инструмента или сценария и помогает сглаживать колебания доходности.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="card-elevated">
+                <CardHeader>
+                  <BarChart3 className="h-8 w-8 text-primary mb-2" />
+                  <CardTitle>Безопасность на каждом этапе</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="text-muted-foreground space-y-3">
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Многоуровневый риск-контроль — лимиты на сделку, дневные и недельные ограничения по убыткам
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Постоянный мониторинг — команда риск-менеджеров следит за работой алгоритмов и действиями трейдеров в реальном времени
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Адаптация стратегий — регулярный пересмотр и оптимизация алгоритмов и торговых планов
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+
+            <Card className="card-elevated">
+              <CardContent className="pt-8">
+                <div className="text-center">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
+                    <span className="text-2xl">💡</span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-primary mb-4">Для инвестора:</h3>
+                  <p className="text-foreground max-w-4xl mx-auto leading-relaxed">
+                    Вы получаете систему, где человеческий опыт и машинная точность работают вместе. 
+                    Это не просто торговля — это комплексная стратегия, которая сочетает скорость, 
+                    гибкость и высокий уровень защиты капитала.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">

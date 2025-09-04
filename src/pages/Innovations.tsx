@@ -266,96 +266,209 @@ const Innovations = () => {
       {/* Portfolio Example */}
       <section className="py-20 bg-gradient-to-br from-background to-muted/30">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-8 text-gradient-primary">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-bold mb-8 text-gradient-primary text-center">
               Практический кейс диверсификации портфеля ($100,000)
             </h2>
-            <p className="text-xl text-muted-foreground mb-12">
+            <p className="text-xl text-muted-foreground text-center mb-12">
               Распределение инновационного бюджета между семью направлениями с детализацией 
               ожидаемой доходности и рисков
             </p>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {/* RWA */}
               <Card className="card-elevated">
-                <CardContent className="pt-6">
-                  <div className="text-center mb-4">
-                    <div className="text-2xl font-bold text-primary">25%</div>
-                    <div className="text-sm text-muted-foreground">$25,000</div>
+                <CardHeader>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-primary">25%</div>
+                    <div className="text-lg font-semibold text-muted-foreground">$25,000</div>
                   </div>
-                  <h3 className="font-semibold mb-2">Токенизация RWA</h3>
-                  <div className="text-sm text-muted-foreground space-y-1">
-                    <div>Доходность: 8–15%</div>
-                    <div>Риск: до 15%</div>
+                  <CardTitle className="text-center">Токенизация RWA</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-2 text-sm">
+                    <div className="flex justify-between">
+                      <span>Ожидаемая доходность:</span>
+                      <span className="font-semibold text-primary">8–15% годовых</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Риск потерь:</span>
+                      <span className="text-destructive">до 15%</span>
+                    </div>
+                  </div>
+                  <div className="mt-4 text-xs text-muted-foreground">
+                    <p className="mb-2"><strong>Стратегия:</strong></p>
+                    <p>$10,000 в токенизированные акции, $5,000 в казначейские облигации через Ondo Finance, 
+                    $5,000 в коммерческую недвижимость, $5,000 в сырьевые товары</p>
+                    <p className="mt-2"><strong>Горизонт:</strong> 12–36 месяцев</p>
                   </div>
                 </CardContent>
               </Card>
 
+              {/* ICO/IEO/IDO */}
               <Card className="card-elevated">
-                <CardContent className="pt-6">
-                  <div className="text-center mb-4">
-                    <div className="text-2xl font-bold text-primary">20%</div>
-                    <div className="text-sm text-muted-foreground">$20,000</div>
+                <CardHeader>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-primary">20%</div>
+                    <div className="text-lg font-semibold text-muted-foreground">$20,000</div>
                   </div>
-                  <h3 className="font-semibold mb-2">ICO/IEO/IDO</h3>
-                  <div className="text-sm text-muted-foreground space-y-1">
-                    <div>Доходность: 50–200%</div>
-                    <div>Риск: до 80%</div>
+                  <CardTitle className="text-center">ICO/IEO/IDO участие</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-2 text-sm">
+                    <div className="flex justify-between">
+                      <span>Ожидаемая доходность:</span>
+                      <span className="font-semibold text-primary">50–200% годовых</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Риск потерь:</span>
+                      <span className="text-destructive">до 80%</span>
+                    </div>
+                  </div>
+                  <div className="mt-4 text-xs text-muted-foreground">
+                    <p className="mb-2"><strong>Стратегия:</strong></p>
+                    <p>Участие в 3–5 проектах по $4,000–6,000, предпочтение IEO на ведущих биржах</p>
+                    <p className="mt-2"><strong>Горизонт:</strong> 6–18 месяцев</p>
                   </div>
                 </CardContent>
               </Card>
 
+              {/* Mining */}
               <Card className="card-elevated">
-                <CardContent className="pt-6">
-                  <div className="text-center mb-4">
-                    <div className="text-2xl font-bold text-primary">15%</div>
-                    <div className="text-sm text-muted-foreground">$15,000</div>
+                <CardHeader>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-primary">15%</div>
+                    <div className="text-lg font-semibold text-muted-foreground">$15,000</div>
                   </div>
-                  <h3 className="font-semibold mb-2">Майнинг</h3>
-                  <div className="text-sm text-muted-foreground space-y-1">
-                    <div>Доходность: 12–18%</div>
-                    <div>Риск: до 25%</div>
+                  <CardTitle className="text-center">Майнинг криптовалют</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-2 text-sm">
+                    <div className="flex justify-between">
+                      <span>Ожидаемая доходность:</span>
+                      <span className="font-semibold text-primary">12–18% годовых</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Риск потерь:</span>
+                      <span className="text-destructive">до 25%</span>
+                    </div>
+                  </div>
+                  <div className="mt-4 text-xs text-muted-foreground">
+                    <p className="mb-2"><strong>Стратегия:</strong></p>
+                    <p>Покупка ASIC-оборудования для облачного майнинга с дешевой электроэнергией</p>
+                    <p className="mt-2"><strong>Горизонт:</strong> 24–48 месяцев</p>
                   </div>
                 </CardContent>
               </Card>
 
+              {/* NFT */}
               <Card className="card-elevated">
-                <CardContent className="pt-6">
-                  <div className="text-center mb-4">
-                    <div className="text-2xl font-bold text-primary">10%</div>
-                    <div className="text-sm text-muted-foreground">$10,000</div>
+                <CardHeader>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-primary">10%</div>
+                    <div className="text-lg font-semibold text-muted-foreground">$10,000</div>
                   </div>
-                  <h3 className="font-semibold mb-2">NFT-инвестиции</h3>
-                  <div className="text-sm text-muted-foreground space-y-1">
-                    <div>Доходность: -20% до +150%</div>
-                    <div>Риск: до 70%</div>
+                  <CardTitle className="text-center">NFT-инвестиции</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-2 text-sm">
+                    <div className="flex justify-between">
+                      <span>Ожидаемая доходность:</span>
+                      <span className="font-semibold text-primary">-20% до +150%</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Риск потерь:</span>
+                      <span className="text-destructive">до 70%</span>
+                    </div>
+                  </div>
+                  <div className="mt-4 text-xs text-muted-foreground">
+                    <p className="mb-2"><strong>Стратегия:</strong></p>
+                    <p>$4,000 в Telegram-стикеры, $3,000 в blue-chip коллекции, $3,000 в игровые NFT и метавселенные</p>
+                    <p className="mt-2"><strong>Горизонт:</strong> 6–24 месяца</p>
                   </div>
                 </CardContent>
               </Card>
 
+              {/* Airdrop */}
               <Card className="card-elevated">
-                <CardContent className="pt-6">
-                  <div className="text-center mb-4">
-                    <div className="text-2xl font-bold text-primary">10%</div>
-                    <div className="text-sm text-muted-foreground">$10,000</div>
+                <CardHeader>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-primary">10%</div>
+                    <div className="text-lg font-semibold text-muted-foreground">$10,000</div>
                   </div>
-                  <h3 className="font-semibold mb-2">Airdrop</h3>
-                  <div className="text-sm text-muted-foreground space-y-1">
-                    <div>Доходность: 100–300%</div>
-                    <div>Риск: до 50%</div>
+                  <CardTitle className="text-center">Airdrop-стратегии</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-2 text-sm">
+                    <div className="flex justify-between">
+                      <span>Ожидаемая доходность:</span>
+                      <span className="font-semibold text-primary">100–300% годовых</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Риск потерь:</span>
+                      <span className="text-destructive">до 50%</span>
+                    </div>
+                  </div>
+                  <div className="mt-4 text-xs text-muted-foreground">
+                    <p className="mb-2"><strong>Стратегия:</strong></p>
+                    <p>Участие в 5–10 проектах L2 и DeFi для максимизации количества распределений</p>
+                    <p className="mt-2"><strong>Горизонт:</strong> 6–18 месяцев</p>
                   </div>
                 </CardContent>
               </Card>
 
+              {/* Liquid Restaking */}
               <Card className="card-elevated">
-                <CardContent className="pt-6">
-                  <div className="text-center mb-4">
-                    <div className="text-2xl font-bold text-primary">10%</div>
-                    <div className="text-sm text-muted-foreground">$10,000</div>
+                <CardHeader>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-primary">10%</div>
+                    <div className="text-lg font-semibold text-muted-foreground">$10,000</div>
                   </div>
-                  <h3 className="font-semibold mb-2">Liquid Restaking</h3>
-                  <div className="text-sm text-muted-foreground space-y-1">
-                    <div>Доходность: 6–11%</div>
-                    <div>Риск: до 20%</div>
+                  <CardTitle className="text-center">Liquid Restaking</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-2 text-sm">
+                    <div className="flex justify-between">
+                      <span>Ожидаемая доходность:</span>
+                      <span className="font-semibold text-primary">6–11% годовых</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Риск потерь:</span>
+                      <span className="text-destructive">до 20%</span>
+                    </div>
+                  </div>
+                  <div className="mt-4 text-xs text-muted-foreground">
+                    <p className="mb-2"><strong>Стратегия:</strong></p>
+                    <p>Стейкинг ETH через Lido → EigenLayer</p>
+                    <p className="mt-2"><strong>Горизонт:</strong> 12+ месяцев</p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* AI in DeFi */}
+              <Card className="card-elevated">
+                <CardHeader>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-primary">10%</div>
+                    <div className="text-lg font-semibold text-muted-foreground">$10,000</div>
+                  </div>
+                  <CardTitle className="text-center">AI в DeFi</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-2 text-sm">
+                    <div className="flex justify-between">
+                      <span>Ожидаемая доходность:</span>
+                      <span className="font-semibold text-primary">-10% до +120%</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Риск потерь:</span>
+                      <span className="text-destructive">до 60%</span>
+                    </div>
+                  </div>
+                  <div className="mt-4 text-xs text-muted-foreground">
+                    <p className="mb-2"><strong>Стратегия:</strong></p>
+                    <p>AI/ML-алгоритмы для оптимизации доходности и управления рисками</p>
+                    <p className="mt-2"><strong>Горизонт:</strong> 12–36 месяцев</p>
                   </div>
                 </CardContent>
               </Card>
