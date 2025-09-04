@@ -18,11 +18,34 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        
+        // IKS Capital Custom Variants
+        hero: [
+          "bg-gradient-primary text-primary-foreground font-semibold",
+          "hover:scale-105 hover:shadow-hero transition-all duration-300",
+          "border-0 shadow-brand"
+        ],
+        cta: [
+          "bg-accent text-accent-foreground font-semibold",
+          "hover:bg-accent/90 hover:scale-105 transition-all duration-300",
+          "shadow-card border border-accent/20"
+        ],
+        glass: [
+          "bg-background/80 backdrop-blur-md border border-border/50",
+          "hover:bg-background/90 hover:border-primary/30",
+          "transition-all duration-300"
+        ],
+        minimal: [
+          "bg-transparent text-foreground hover:text-primary",
+          "hover:bg-primary/5 transition-all duration-300",
+          "border-0"
+        ]
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
+        xl: "h-14 rounded-lg px-10 text-lg",
         icon: "h-10 w-10",
       },
     },
