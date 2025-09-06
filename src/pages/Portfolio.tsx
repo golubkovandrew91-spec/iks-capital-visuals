@@ -11,9 +11,8 @@ const Portfolio = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-20 bg-gradient-hero">
-        <div className="absolute inset-0 bg-gradient-overlay" />
-        <div className="container mx-auto px-4 relative z-10">
+      <section className="pt-24 pb-20 bg-background">
+        <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h1 className="text-5xl md:text-6xl font-bold text-gradient-primary">
               Портфельное управление
@@ -57,7 +56,7 @@ const Portfolio = () => {
                   <Shield className="h-12 w-12 text-primary mx-auto mb-4 group-hover:scale-110 transition-transform" />
                   <h3 className="text-lg font-semibold mb-3">Свободное управление</h3>
                   <p className="text-muted-foreground text-sm">
-                    Активами с возможностью перевода, обмена и продажи
+                    Возможность перевода, обмена и продажи активов
                   </p>
                 </CardContent>
               </Card>
@@ -67,7 +66,7 @@ const Portfolio = () => {
                   <Lock className="h-12 w-12 text-primary mx-auto mb-4 group-hover:scale-110 transition-transform" />
                   <h3 className="text-lg font-semibold mb-3">Максимальная защита</h3>
                   <p className="text-muted-foreground text-sm">
-                    От взлома за счет офлайн-хранения
+                    От взлома за счет оффлайн-хранения
                   </p>
                 </CardContent>
               </Card>
@@ -77,7 +76,7 @@ const Portfolio = () => {
                   <DollarSign className="h-12 w-12 text-primary mx-auto mb-4 group-hover:scale-110 transition-transform" />
                   <h3 className="text-lg font-semibold mb-3">Полный контроль</h3>
                   <p className="text-muted-foreground text-sm">
-                    Инвестора над активами с доступом только у владельца
+                    Доступ к активам только у инвестора
                   </p>
                 </CardContent>
               </Card>
@@ -501,7 +500,7 @@ const Portfolio = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-primary text-primary-foreground">
+      <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">
             Хотите узнать больше о портфельном управлении?

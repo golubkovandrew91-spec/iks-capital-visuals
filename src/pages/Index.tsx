@@ -5,6 +5,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { TrendingUp, Shield, Zap, Target, Users, Globe } from "lucide-react";
 import AnimatedCounter from "@/components/AnimatedCounter";
+import { Link } from "react-router-dom";
+
 
 const Index = () => {
   const scrollToSection = (sectionId: string) => {
@@ -135,8 +137,8 @@ const Index = () => {
                 <p className="text-muted-foreground mb-6">
                   Долгосрочная стратегия направленная на прямое владение активами с целью увеличения капитала
                 </p>
-                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                  Подробнее
+                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors" asChild>
+                  <Link to="/portfolio">Подробнее</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -150,8 +152,8 @@ const Index = () => {
                 <p className="text-muted-foreground mb-6">
                   Среднесрочная стратегия основанная на торговле производными инструментами для получения пассивного дохода
                 </p>
-                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                  Подробнее
+                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors" asChild>
+                  <Link to="/trading">Подробнее</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -165,8 +167,8 @@ const Index = () => {
                 <p className="text-muted-foreground mb-6">
                   Изучение новых блокчейн-технологий обеспечивает стратегический рост компании и формирует дополнительный поток доходов
                 </p>
-                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                  Подробнее
+                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors" asChild>
+                  <Link to="/innovations">Подробнее</Link>
                 </Button>
               </CardContent>
             </Card>

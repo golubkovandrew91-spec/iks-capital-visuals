@@ -11,7 +11,6 @@ const Strategy = () => {
       
       {/* Hero Section */}
       <section className="pt-24 pb-20 bg-gradient-hero">
-        <div className="absolute inset-0 bg-gradient-overlay" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h1 className="text-5xl md:text-6xl font-bold text-gradient-primary">
@@ -38,7 +37,7 @@ const Strategy = () => {
               <Card className="card-elevated text-center group">
                 <CardHeader>
                   <TrendingUp className="h-16 w-16 text-primary mx-auto mb-4 group-hover:scale-110 transition-transform" />
-                  <CardTitle className="text-2xl">50% — Трейдинг</CardTitle>
+                  <CardTitle className="text-2xl">40% — Трейдинг</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-lg">Фьючерсные операции</p>
@@ -48,7 +47,7 @@ const Strategy = () => {
               <Card className="card-elevated text-center group">
                 <CardHeader>
                   <Target className="h-16 w-16 text-primary mx-auto mb-4 group-hover:scale-110 transition-transform" />
-                  <CardTitle className="text-2xl">40% — Портфельное управление</CardTitle>
+                  <CardTitle className="text-2xl">50% — Портфельное управление</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-lg">Спотовые активы + DeFi</p>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,8 +7,6 @@
 /* IKS Capital Design System - Based on corporate brand guidelines
 All colors MUST be HSL. Professional investment company aesthetic.
 */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 @layer base {
   :root {
@@ -48,9 +48,9 @@ All colors MUST be HSL. Professional investment company aesthetic.
     /* IKS Capital Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(158 65% 29%), hsl(154 63% 32%));
     --gradient-primary-soft: linear-gradient(135deg, hsl(158 65% 29% / 0.1), hsl(154 63% 32% / 0.1));
-    --gradient-hero: linear-gradient(135deg, hsl(210 8% 11%), hsl(158 65% 29%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 12% 98%));
-    --gradient-overlay: linear-gradient(180deg, hsl(210 8% 11% / 0.7), hsl(158 65% 29% / 0.9));
+    --gradient-hero: none;
+    --gradient-card: none;
+    --gradient-overlay: none;
 
     /* Shadows with brand colors */
     --shadow-brand: 0 10px 30px -10px hsl(158 65% 29% / 0.3);
@@ -113,7 +113,7 @@ All colors MUST be HSL. Professional investment company aesthetic.
     /* Dark mode gradients */
     --gradient-primary: linear-gradient(135deg, hsl(158 65% 29%), hsl(154 63% 32%));
     --gradient-primary-soft: linear-gradient(135deg, hsl(158 65% 29% / 0.2), hsl(154 63% 32% / 0.2));
-    --gradient-hero: linear-gradient(135deg, hsl(210 8% 8%), hsl(158 65% 29%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 8% 8%), hsl(210 8% 15%));
     --gradient-card: linear-gradient(145deg, hsl(210 8% 13%), hsl(210 8% 15%));
     --gradient-overlay: linear-gradient(180deg, hsl(210 8% 8% / 0.9), hsl(158 65% 29% / 0.8));
     --sidebar-background: 240 5.9% 10%;
@@ -135,6 +135,7 @@ All colors MUST be HSL. Professional investment company aesthetic.
   body {
     @apply bg-background text-foreground font-sans;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: hsl(var(--background));
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -175,7 +176,7 @@ All colors MUST be HSL. Professional investment company aesthetic.
   }
 
   .pulse-glow {
-    animation: pulse-glow 2s ease-in-out infinite;
+    animation: pulse-glow 5s ease-in-out infinite;
   }
 
   .slide-up {
