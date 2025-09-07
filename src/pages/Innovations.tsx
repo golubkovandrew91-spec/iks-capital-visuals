@@ -164,6 +164,30 @@ const Innovations = () => {
                 </CardContent>
               </Card>
 
+              {/* Внедрение искусственного интеллекта */}
+              <Card className="card-elevated">
+                <CardHeader>
+                  <Zap className="h-8 w-8 text-primary mb-2" />
+                  <CardTitle className="text-xl">Внедрение искусственного интеллекта</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    Использование алгоритмов машинного обучения и искусственного интеллекта
+                    для оптимизации рабочих процессов, управления рисками и анализа рынка.
+                  </p>
+                  <div className="space-y-3 text-sm">
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Потенциал:</span>
+                      <span className="font-semibold text-primary">Высокий</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Сложность:</span>
+                      <span className="text-destructive">Средняя</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
             </div>
           </div>
         </div>
@@ -251,7 +275,7 @@ const Innovations = () => {
               ожидаемой доходности и рисков
             </p>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-3 gap-6">
               {/* RWA */}
               <Card className="card-elevated">
                 <CardHeader>
@@ -274,7 +298,7 @@ const Innovations = () => {
                   </div>
                   <div className="mt-4 text-xs text-muted-foreground">
                     <p className="mb-2"><strong>Стратегия:</strong></p>
-                    <p>$10,000 в токенизированные акции, $5,000 в казначейские облигации через Ondo Finance, 
+                    <p>$10,000 в токенизированные акции, $5,000 в казначейские облигации через Ondo Finance,
                     $5,000 в коммерческую недвижимость, $5,000 в сырьевые товары</p>
                     <p className="mt-2"><strong>Горизонт:</strong> 12–36 месяцев</p>
                   </div>
@@ -341,8 +365,8 @@ const Innovations = () => {
               <Card className="card-elevated">
                 <CardHeader>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-primary">10%</div>
-                    <div className="text-lg font-semibold text-muted-foreground">$10,000</div>
+                    <div className="text-3xl font-bold text-primary">15%</div>
+                    <div className="text-lg font-semibold text-muted-foreground">$15,000</div>
                   </div>
                   <CardTitle className="text-center">NFT-инвестиции</CardTitle>
                 </CardHeader>
@@ -398,10 +422,10 @@ const Innovations = () => {
               <Card className="card-elevated">
                 <CardHeader>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-primary">10%</div>
-                    <div className="text-lg font-semibold text-muted-foreground">$10,000</div>
+                    <div className="text-3xl font-bold text-primary">15%</div>
+                    <div className="text-lg font-semibold text-muted-foreground">$15,000</div>
                   </div>
-                  <CardTitle className="text-center">Внедрение AI в процессы компании</CardTitle>
+                  <CardTitle className="text-center">Внедрение искусственного интеллекта</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-2 text-sm">
