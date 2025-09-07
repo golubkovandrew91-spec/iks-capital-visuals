@@ -39,7 +39,7 @@ const Innovations = () => {
               Определения и классификация ключевых инструментов
             </h2>
             <p className="text-xl text-muted-foreground text-center mb-16">
-              Семь основных направлений инновационных инвестиций с детальным анализом механизмов работы 
+              Шесть основных направлений инновационных инвестиций с детальным анализом механизмов работы 
               и потенциальной доходности
             </p>
 
@@ -164,29 +164,6 @@ const Innovations = () => {
                 </CardContent>
               </Card>
 
-              {/* Liquid Restaking */}
-              <Card className="card-elevated">
-                <CardHeader>
-                  <Coins className="h-8 w-8 text-primary mb-2" />
-                  <CardTitle className="text-xl">Liquid Restaking</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground mb-4">
-                    Развитие стейкинга, позволяющее использовать застейканные токены (stETH) 
-                    для обеспечения дополнительных блокчейн-сервисов через EigenLayer.
-                  </p>
-                  <div className="space-y-3 text-sm">
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Доходность:</span>
-                      <span className="font-semibold text-primary">5-9% годовых</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Эффективность:</span>
-                      <span className="text-primary">Многослойная</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </div>
@@ -267,10 +244,10 @@ const Innovations = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold mb-8 text-gradient-primary text-center">
-              Практический кейс диверсификации портфеля ($100,000)
+              Практический кейс диверсификации капитала ($100,000)
             </h2>
             <p className="text-xl text-muted-foreground text-center mb-12">
-              Распределение инновационного бюджета между семью направлениями с детализацией 
+              Распределение инновационного бюджета между шестью направлениями с детализацией 
               ожидаемой доходности и рисков
             </p>
 
@@ -373,7 +350,7 @@ const Innovations = () => {
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
                       <span>Ожидаемая доходность:</span>
-                      <span className="font-semibold text-primary">-20% до +150%</span>
+                      <span className="font-semibold text-primary">20-200% годовых</span>
                     </div>
                     <div className="flex justify-between">
                       <span>Риск потерь:</span>
@@ -416,33 +393,6 @@ const Innovations = () => {
                 </CardContent>
               </Card>
 
-              {/* Liquid Restaking */}
-              <Card className="card-elevated">
-                <CardHeader>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-primary">10%</div>
-                    <div className="text-lg font-semibold text-muted-foreground">$10,000</div>
-                  </div>
-                  <CardTitle className="text-center">Liquid Restaking</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-2 text-sm">
-                    <div className="flex justify-between">
-                      <span>Ожидаемая доходность:</span>
-                      <span className="font-semibold text-primary">6–11% годовых</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Риск потерь:</span>
-                      <span className="text-destructive">до 20%</span>
-                    </div>
-                  </div>
-                  <div className="mt-4 text-xs text-muted-foreground">
-                    <p className="mb-2"><strong>Стратегия:</strong></p>
-                    <p>Стейкинг ETH через Lido → EigenLayer</p>
-                    <p className="mt-2"><strong>Горизонт:</strong> 12+ месяцев</p>
-                  </div>
-                </CardContent>
-              </Card>
 
               {/* AI in DeFi */}
               <Card className="card-elevated">
@@ -451,17 +401,17 @@ const Innovations = () => {
                     <div className="text-3xl font-bold text-primary">10%</div>
                     <div className="text-lg font-semibold text-muted-foreground">$10,000</div>
                   </div>
-                  <CardTitle className="text-center">AI в DeFi</CardTitle>
+                  <CardTitle className="text-center">Внедрение AI в процессы компании</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
                       <span>Ожидаемая доходность:</span>
-                      <span className="font-semibold text-primary">-10% до +120%</span>
+                      <span className="font-semibold text-primary">10%-80% годовых</span>
                     </div>
                     <div className="flex justify-between">
                       <span>Риск потерь:</span>
-                      <span className="text-destructive">до 60%</span>
+                      <span className="text-destructive">до 10%</span>
                     </div>
                   </div>
                   <div className="mt-4 text-xs text-muted-foreground">
