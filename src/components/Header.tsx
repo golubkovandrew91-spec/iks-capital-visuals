@@ -62,7 +62,7 @@ const Header = () => {
             <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">I</span>
             </div>
-            <span className="text-xl font-bold text-gradient-primary">IKS Capital</span>
+            <span className="text-xl font-bold text-gradient-primary max-sm:text-lg">IKS Capital</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -141,18 +141,18 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="lg:hidden absolute top-16 left-0 right-0 bg-background border-b border-border shadow-lg">
-            <div className="container mx-auto px-4 py-4 space-y-2">
+144 |             <div className="container mx-auto px-4 py-4 space-y-3">
               {menuItems.map((item) => (
                 <div key={item.title}>
                   {item.items ? (
                     <>
-                      <div className="font-medium text-foreground py-2">{item.title}</div>
+                      <div className="font-medium text-foreground py-2 text-base">{item.title}</div>
                       <div className="pl-4 space-y-1">
                         {item.items.map((subItem) => (
                           <Link
                             key={subItem.title}
                             to={subItem.href}
-                            className="block py-2 text-muted-foreground hover:text-primary transition-colors"
+                            className="block py-2 text-muted-foreground hover:text-primary transition-colors text-base"
                             onClick={() => setIsMenuOpen(false)}
                           >
                             {subItem.title}
@@ -177,9 +177,9 @@ const Header = () => {
               ))}
               
               <div className="pt-4 border-t border-border space-y-2">
-                <Button 
-                  variant="outline" 
-                  className="w-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                <Button
+                  variant="outline"
+                  className="w-full hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-base"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Регистрация/Вход
@@ -187,7 +187,7 @@ const Header = () => {
                 
                 <Button
                   variant="ghost"
-                  className="w-full justify-start"
+                  className="w-full justify-start text-base"
                   onClick={() => {
                     setTheme(theme === "dark" ? "light" : "dark");
                     setIsMenuOpen(false);
