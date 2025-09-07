@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Cpu, Coins, TrendingUp, Shield, Zap, Globe, DollarSign } from "lucide-react";
 import { Link } from "react-router-dom";
+import SpotlightCard from "@/components/SpotlightCard";
 
 const Innovations = () => {
   return (
@@ -205,14 +206,14 @@ const Innovations = () => {
             </p>
 
             <div className="grid lg:grid-cols-3 gap-8">
-              <Card className="card-elevated">
+              <SpotlightCard>
                 <CardHeader>
                   <Shield className="h-8 w-8 text-primary mb-2" />
                   <CardTitle>Ограничения по доле капитала</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
-                    Жесткий лимит в 10% от общего управляемого капитала обеспечивает баланс между 
+                    Жесткий лимит в 10% от общего управляемого капитала обеспечивает баланс между
                     инновационным потенциалом и консервативным подходом IKS Capital.
                   </p>
                   <ul className="text-sm text-muted-foreground space-y-2">
@@ -221,9 +222,9 @@ const Innovations = () => {
                     <li>• Постепенное масштабирование успешных стратегий</li>
                   </ul>
                 </CardContent>
-              </Card>
+              </SpotlightCard>
 
-              <Card className="card-elevated">
+              <SpotlightCard>
                 <CardHeader>
                   <TrendingUp className="h-8 w-8 text-primary mb-2" />
                   <CardTitle>Многоэтапная методология отбора</CardTitle>
@@ -239,9 +240,9 @@ const Innovations = () => {
                     <li>4. Риск-оценка: Количественная оценка просадки</li>
                   </ol>
                 </CardContent>
-              </Card>
+              </SpotlightCard>
 
-              <Card className="card-elevated">
+              <SpotlightCard>
                 <CardHeader>
                   <Zap className="h-8 w-8 text-primary mb-2" />
                   <CardTitle>Интеграция успешных кейсов</CardTitle>
@@ -257,7 +258,7 @@ const Innovations = () => {
                     <li>• Образовательные программы для клиентов</li>
                   </ul>
                 </CardContent>
-              </Card>
+              </SpotlightCard>
             </div>
           </div>
         </div>
