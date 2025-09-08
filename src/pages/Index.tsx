@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { TrendingUp, Shield, Zap, Target, Users, Globe } from "lucide-react";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import { Link } from "react-router-dom";
+import DecryptedText from "@/components/DecryptedText";
 
 
 const Index = () => {
@@ -35,27 +36,6 @@ const Index = () => {
 
           {/* Results */}
           <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto mb-16 sm:mb-20">
-            <Card className="card-elevated text-center">
-              <CardContent className="pt-6 sm:pt-8">
-                <TrendingUp className="h-8 w-8 sm:h-12 sm:w-12 text-primary mx-auto mb-3 sm:mb-4" />
-                <h3 className="text-xl sm:text-2xl font-bold mb-2">Трейдинг</h3>
-                <div className="text-3xl sm:text-4xl font-bold text-gradient-primary mb-2">
-                  <AnimatedCounter end={50} suffix="%" />
-                </div>
-                <p className="text-muted-foreground text-sm sm:text-base">доходности к депозиту</p>
-              </CardContent>
-            </Card>
-
-            <Card className="card-elevated text-center">
-              <CardContent className="pt-6 sm:pt-8">
-                <Target className="h-8 w-8 sm:h-12 sm:w-12 text-primary mx-auto mb-3 sm:mb-4" />
-                <h3 className="text-xl sm:text-2xl font-bold mb-2">Портфельное управление</h3>
-                <div className="text-3xl sm:text-4xl font-bold text-gradient-primary mb-2">
-                  <AnimatedCounter end={100} suffix="%" />
-                </div>
-                <p className="text-muted-foreground text-sm sm:text-base">доходности к депозиту</p>
-              </CardContent>
-            </Card>
           </div>
 
           {/* Philosophy */}
@@ -119,11 +99,10 @@ const Index = () => {
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6 text-gradient-primary">Основные направления</h2>
             <p className="text-base sm:text-lg text-foreground max-w-5xl mx-auto leading-relaxed">
-              Стратегия IKS Capital заключается в комплексном подходе к работе с криптоактивами,
-              объединяющий два основных направления — портфельное управление и трейдинг, которые уже
-              доказали свою эффективность в обеспечении стабильного роста капитала и регулярного денежного потока,
-              а также дополнительное - инновационные направления для технологического развития,
-              создания долгосрочных конкурентных преимуществ и расширения возможностей получения доходности.
+              <DecryptedText
+                text="Стратегия IKS Capital заключается в комплексном подходе к работе с криптоактивами, объединяющий два основных направления — портфельное управление и трейдинг, которые уже доказали свою эффективность в обеспечении стабильного роста капитала и регулярного денежного потока, а также дополнительное - инновационные направления для технологического развития, создания долгосрочных конкурентных преимуществ и расширения возможностей получения доходности."
+                animateOn="view"
+              />
             </p>
           </div>
 
