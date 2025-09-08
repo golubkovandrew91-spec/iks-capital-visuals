@@ -151,7 +151,7 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-muted-foreground">info@ikscapital.com</p>
+                    <p className="text-muted-foreground">support@iks.exchange</p>
                   </div>
                 </div>
 
@@ -172,8 +172,8 @@ const ContactForm = () => {
                   <div>
                     <p className="font-medium">Адрес</p>
                     <p className="text-muted-foreground">
-                      г. Москва, ул. Примерная, д. 1,<br />
-                      БЦ «Современный», офис 101
+                      Пресненская набережная 8,<br />
+                      Москва-Сити, Башня Город Столиц
                     </p>
                   </div>
                 </div>
@@ -185,7 +185,7 @@ const ContactForm = () => {
                   <div>
                     <p className="font-medium">Часы работы</p>
                     <p className="text-muted-foreground">
-                      Пн–Пт: 9:00–18:00<br />
+                      Пн–Пт: 10:00–19:00<br />
                       Сб–Вс: выходной
                     </p>
                   </div>
