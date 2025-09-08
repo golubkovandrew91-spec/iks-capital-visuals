@@ -40,7 +40,7 @@ const HeroSection = () => {
                 <Button
                   variant="hero"
                   size="lg"
-                  className="pulse-glow text-base sm:text-lg"
+                  className="text-base sm:text-lg"
                   onClick={() => scrollToSection("contact")}
                 >
                   Начните инвестировать с IKS Capital уже сегодня

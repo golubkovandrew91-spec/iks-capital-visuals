@@ -72,7 +72,7 @@ const Header = () => {
                 <NavigationMenuItem key={item.title}>
                   {item.items ? (
                     <>
-                      <NavigationMenuTrigger className="text-foreground hover:text-primary transition-colors">
+                      <NavigationMenuTrigger className="text-foreground hover:text-primary transition-colors hover:bg-accent/10">
                         {item.title}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
@@ -81,7 +81,7 @@ const Header = () => {
                             <Link
                               key={subItem.title}
                               to={subItem.href}
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground"
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/10 hover:text-accent-foreground"
                             >
                               <div className="text-sm font-medium leading-none">{subItem.title}</div>
                             </Link>
@@ -93,7 +93,7 @@ const Header = () => {
                     <Button
                       variant="ghost"
                       onClick={item.action || (() => {})}
-                      className="text-foreground hover:text-primary transition-colors"
+                      className="text-foreground hover:text-primary transition-colors hover:bg-accent/10"
                     >
                       {item.href?.startsWith('/') ? (
                         <Link to={item.href}>{item.title}</Link>
@@ -120,7 +120,7 @@ const Header = () => {
               variant="ghost"
               size="icon"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="hover:bg-accent"
+              className="hover:bg-accent/10"
             >
               <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
               <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
@@ -141,7 +141,7 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="lg:hidden absolute top-16 left-0 right-0 bg-background border-b border-border shadow-lg">
-144 |             <div className="container mx-auto px-4 py-4 space-y-3">
+            <div className="container mx-auto px-4 py-4 space-y-3">
               {menuItems.map((item) => (
                 <div key={item.title}>
                   {item.items ? (
@@ -163,7 +163,7 @@ const Header = () => {
                   ) : (
                     <Button
                       variant="ghost"
-                      className="w-full justify-start text-foreground hover:text-primary"
+                      className="w-full justify-start text-foreground hover:text-primary hover:bg-accent/10"
                       onClick={item.action || (() => setIsMenuOpen(false))}
                     >
                       {item.href?.startsWith('/') ? (
@@ -179,7 +179,7 @@ const Header = () => {
               <div className="pt-4 border-t border-border space-y-2">
                 <Button
                   variant="outline"
-                  className="w-full hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-base"
+                  className="w-full hover:bg-primary/10 hover:text-primary-foreground transition-all duration-300 text-base"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Регистрация/Вход
@@ -187,7 +187,7 @@ const Header = () => {
                 
                 <Button
                   variant="ghost"
-                  className="w-full justify-start text-base"
+                  className="w-full justify-start text-base hover:bg-accent/10"
                   onClick={() => {
                     setTheme(theme === "dark" ? "light" : "dark");
                     setIsMenuOpen(false);

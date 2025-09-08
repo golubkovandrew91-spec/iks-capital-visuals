@@ -12,7 +12,7 @@ const PillNav = ({
   ease = 'power3.easeOut',
   baseColor = '#fff',
   pillColor = '#060010',
-  hoveredPillTextColor = '#060010',
+  hoveredPillTextColor = '#0dc08aff',
   pillTextColor,
   onMobileMenuClick,
   initialLoadAnimation = true

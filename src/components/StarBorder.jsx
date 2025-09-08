@@ -3,9 +3,9 @@ import './StarBorder.css';
 const StarBorder = ({
   as: Component = 'button',
   className = '',
-  color = 'white',
-  speed = '6s',
-  thickness = 1,
+  color = 'green',
+  speed = '2s',
+  thickness = 7,
   children,
   ...rest
 }) => {

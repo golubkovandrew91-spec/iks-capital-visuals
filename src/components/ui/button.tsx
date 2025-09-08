@@ -21,9 +21,9 @@ const buttonVariants = cva(
         
         // IKS Capital Custom Variants
         hero: [
-          "bg-gradient-primary text-primary-foreground font-semibold",
-          "hover:scale-105 hover:shadow-hero transition-all duration-300",
-          "border-0 shadow-brand"
+          "bg-transparent text-primary font-semibold",
+          "hover:bg-transparent hover:scale-105 transition-all duration-300",
+          "border-0"
         ],
         cta: [
           "bg-accent text-accent-foreground font-semibold",

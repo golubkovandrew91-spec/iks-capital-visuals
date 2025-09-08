@@ -149,7 +149,6 @@ All colors MUST be HSL. Professional investment company aesthetic.
     @apply bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold;
     @apply hover:scale-105 transition-all duration-300;
     box-shadow: var(--shadow-brand);
-    background: var(--gradient-primary);
   }
 
   .card-elevated {
