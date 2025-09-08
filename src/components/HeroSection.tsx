@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, TrendingUp, Shield, Target } from "lucide-react";
 import AnimatedCounter from "./AnimatedCounter";
 import GradientText from "./GradientText";
+import StarBorder from "@/components/StarBorder";
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -35,15 +36,17 @@ const HeroSection = () => {
 
             {/* CTA Button */}
             <div className="pt-8">
-              <Button
-                variant="hero"
-                size="lg"
-                className="pulse-glow text-base sm:text-lg"
-                onClick={() => scrollToSection("contact")}
-              >
-                Начните инвестировать с IKS Capital уже сегодня
-                <ArrowRight className="ml-2 h-5 w-5 sm:h-6 sm:w-6" />
-              </Button>
+              <StarBorder>
+                <Button
+                  variant="hero"
+                  size="lg"
+                  className="pulse-glow text-base sm:text-lg"
+                  onClick={() => scrollToSection("contact")}
+                >
+                  Начните инвестировать с IKS Capital уже сегодня
+                  <ArrowRight className="ml-2 h-5 w-5 sm:h-6 sm:w-6" />
+                </Button>
+              </StarBorder>
             </div>
 
             {/* Key Stats */}
