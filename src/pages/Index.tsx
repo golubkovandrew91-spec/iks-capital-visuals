@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { TrendingUp, Shield, Zap, Target, Users, Globe } from "lucide-react";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import { Link } from "react-router-dom";
-import DecryptedText from "@/components/DecryptedText";
 
 
 const Index = () => {
@@ -99,10 +98,11 @@ const Index = () => {
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6 text-gradient-primary">Основные направления</h2>
             <p className="text-base sm:text-lg text-foreground max-w-5xl mx-auto leading-relaxed">
-              <DecryptedText
-                text="Стратегия IKS Capital заключается в комплексном подходе к работе с криптоактивами, объединяющий два основных направления — портфельное управление и трейдинг, которые уже доказали свою эффективность в обеспечении стабильного роста капитала и регулярного денежного потока, а также дополнительное - инновационные направления для технологического развития, создания долгосрочных конкурентных преимуществ и расширения возможностей получения доходности."
-                animateOn="view"
-              />
+              Стратегия IKS Capital заключается в комплексном подходе к работе с криптоактивами,
+              объединяющий два основных направления — портфельное управление и трейдинг, которые уже
+              доказали свою эффективность в обеспечении стабильного роста капитала и регулярного денежного потока,
+              а также дополнительное - инновационные направления для технологического развития,
+              создания долгосрочных конкурентных преимуществ и расширения возможностей получения доходности.
             </p>
           </div>
 
