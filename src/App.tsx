@@ -24,7 +24,13 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <ScrollToTop />
-          <SplashCursor />
+          <SplashCursor
+            SIM_RESOLUTION={64}
+            DYE_RESOLUTION={512}
+            PRESSURE_ITERATIONS={10}
+            CURL={2}
+            SPLAT_FORCE={3000}
+          />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/portfolio" element={<Portfolio />} />
